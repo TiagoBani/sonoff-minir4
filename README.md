@@ -9,8 +9,9 @@ ESP32 clássico com Sonoff original 1.2.0. Ligar/desligar pelo Casa e pelo
 interruptor físico funcionaram, com estado sincronizado. Retorno ao original
 por Wi-Fi e reinstalação do mesmo candidato preservaram o pareamento.
 O modo confirmado remove o temporizador de teste e seleciona HomeKit para
-os próximos boots. Reinício depois dessa confirmação, corte real de energia,
-atualização para outra versão e estabilidade prolongada ainda não foram testados.
+os próximos boots. Em 16/11/2026, o usuário confirmou reconexão e estado
+correto no Casa após um corte real de energia, sem novo pareamento.
+Atualização para outra versão e estabilidade prolongada ainda não foram testadas.
 
 ## Escopo e limites
 
@@ -113,6 +114,7 @@ backups, conta eWeLink ou configuração de um dispositivo real.
 - `sonoff_*.py`: inspeção, embalagem, instalação e manutenção.
 - `tests_homekit/` e `test_*.py`: testes offline com dados fictícios.
 - [Arquitetura](homekit-plan/ARQUITETURA.md) e [resultado real](docs/RESULTADO_0_2_2.md).
+- [Preservação das chaves e preparação de outros módulos](docs/CHAVES_E_MODULOS.md).
 - [Licenças e origem](LICENSES.md): código adaptado preserva GPL-3.0-or-later;
   dependências mantêm suas licenças. A licença MIT inicial não substitui esses avisos.
 

@@ -26,3 +26,6 @@ __pycache__/
 /firmware-liberator/
 /esp-homekit-reference/
 /haa-reference/
+
+# Credenciais, perfis e cópias privadas por módulo
+/devices-private/

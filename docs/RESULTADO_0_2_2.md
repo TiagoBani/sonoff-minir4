@@ -18,7 +18,13 @@ Os 81 testes locais passaram antes dos ensaios. A revisão 0.2.2 corrigiu um
 limite insuficiente de sockets: usa 16 compartilhados, quatro clientes HAP e
 dois clientes de manutenção, com guarda de compilação.
 
-Ainda não testados: reboot após confirmação, falta/retorno real de energia,
-atualização para uma versão diferente e estabilidade por período prolongado.
+Em 16/11/2026, o usuário confirmou um corte real de energia após a confirmação:
+ao reenergizar, o módulo voltou a comunicar com o mesmo acessório no Casa e
+o estado exibido passou a corresponder à luz real, sem novo pareamento.
+Durante a falta de energia, o app manteve o último estado exibido. Essa prova
+foi relatada pelo usuário; não houve medição de tempo de reconexão.
+
+Ainda não testados: atualização para uma versão diferente e estabilidade
+por período prolongado.
 O ciclo OTA ensaiado regravou a mesma versão. Não extrapolar esse resultado
 para outros modelos, firmwares, layouts ou cargas.

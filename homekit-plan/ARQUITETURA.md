@@ -42,5 +42,5 @@ usar OTA proprietário para substituir `ota_0`. O novo build começa em teste e
 precisa ser validado. Não executar OTA Sonoff com HomeKit em execução, pois o
 slot oposto contém o original. Primeira gravação antecede o backup completo.
 
-A confirmação persistida seleciona HomeKit para boots seguintes; o teste real
-de corte de energia continua pendente. [Resultado dos ensaios](../docs/RESULTADO_0_2_2.md).
+A confirmação persistida seleciona HomeKit para boots seguintes. Em16/11/2026,
+o usuário validou reconexão e estado correto no Casa após corte real de energia. [Resultado dos ensaios](../docs/RESULTADO_0_2_2.md).
