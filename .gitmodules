@@ -1,6 +1,0 @@
-[submodule "firmware-liberator"]
-    path = firmware-liberator
-    url = https://github.com/adamsthws/firmware-liberator.git
-[submodule "esp-homekit-reference"]
-    path = esp-homekit-reference
-    url = https://github.com/espressif/esp-homekit-sdk.git

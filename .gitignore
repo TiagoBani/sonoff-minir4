@@ -21,3 +21,8 @@ __pycache__/
 **/managed_components/
 **/sdkconfig.*
 !**/sdkconfig.defaults
+
+# Projetos de referência baixados separadamente
+/firmware-liberator/
+/esp-homekit-reference/
+/haa-reference/

@@ -12,9 +12,9 @@ sob GPL-3.0-or-later; o texto correspondente está em `COPYING` e
 
 Ferramentas Python, testes e documentação adicionados por este projeto usam a
 licença MIT de `LICENSE`, salvo aviso específico no arquivo. Importar ou usar
-as ferramentas do submódulo não muda a licença do código desse submódulo.
+as ferramentas do clone local não muda a licença do código desse clone local.
 
-O SDK espressif/esp-homekit-sdk é referenciado como submódulo fixado em
+O SDK espressif/esp-homekit-sdk é usado como clone local, ignorado pelo Git, na revisão
 2985547b3ebb99e1e31350d369bc543327fe7e49. Seus componentes mantêm os avisos
 originais, inclusive condições de uso em produtos Espressif. O componente
 local de plataforma referencia os fontes originais do SDK e substitui o

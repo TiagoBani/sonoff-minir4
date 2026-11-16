@@ -33,8 +33,12 @@ Não foi validado acesso remoto pelo Casa nem automações com uma central Apple
 ## Preparar o código
 
 ```sh
-git clone --recurse-submodules https://github.com/TiagoBani/sonoff-minir4.git
+git clone https://github.com/TiagoBani/sonoff-minir4.git
 cd sonoff-minir4
+git clone https://github.com/adamsthws/firmware-liberator.git firmware-liberator
+git -C firmware-liberator checkout --detach 77702d7c8b725b85f54a0ae834e6379c9fd93e22
+git clone https://github.com/espressif/esp-homekit-sdk.git esp-homekit-reference
+git -C esp-homekit-reference checkout --detach 2985547b3ebb99e1e31350d369bc543327fe7e49
 python3.11 -m venv .venv-build
 .venv-build/bin/pip install -r requirements-build.txt
 python3 -m venv .venv
@@ -52,12 +56,14 @@ credenciais, chaves ou arquivos privados ao repositório. Os geradores criam
 material novo por instalação e preservam o que já existe. Guarde o código de
 pareamento de `homekit-plan/pairing.local.json` para uso no Casa.
 
-Submódulos fixados: Firmware Liberator `77702d7c8b725b85f54a0ae834e6379c9fd93e22`
+Referências locais ignoradas pelo Git, com revisões fixadas: Firmware Liberator `77702d7c8b725b85f54a0ae834e6379c9fd93e22`
 e Espressif HomeKit SDK `2985547b3ebb99e1e31350d369bc543327fe7e49`.
+As pastas `firmware-liberator/`, `esp-homekit-reference/` e `haa-reference/`
+ficam no `.gitignore`. O HAA é uma referência opcional e não participa deste build.
 
 ## Compilar e testar
 
-Pré-requisitos dos testes: Python, compilador Clang, submódulos inicializados
+Pré-requisitos dos testes: Python, compilador Clang, clones locais nas revisões indicadas
 e toolchain IDF obtida pelo build (usada pelo parser NVS oficial).
 Não precisam de dispositivo nem de credenciais para a suíte abaixo:
 
