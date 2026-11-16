@@ -1,0 +1,23 @@
+# Dados privados e resultados do dispositivo
+.env
+.env.*
+!.env.example
+target.local.json
+**/*.local.h
+**/*.local.json
+captures/
+firmware-oficial/
+firmware-experimental/
+*.bin
+*.elf
+*.ota
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+.venv*/
+.platformio-minir4/
+**/.pio/
+**/managed_components/
+**/sdkconfig.*
+!**/sdkconfig.defaults

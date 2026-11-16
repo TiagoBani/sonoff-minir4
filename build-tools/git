@@ -1,0 +1,6 @@
+#!/bin/sh
+# PlatformIO's x86 CMake must invoke Apple's arm64-only Command Line Tools.
+if [ "$(uname -s)" = Darwin ]; then
+    exec /usr/bin/arch -arm64 /usr/bin/git "$@"
+fi
+exec /usr/bin/git "$@"
